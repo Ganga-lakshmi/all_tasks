@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<h2 id="ff">creating form</h2><br><br>
+	<div id="fd">
+		<p class="para">register the form</p>
+		<p></p>
+
+	<div class="sec" >
+		<!-- onsubmit="return validate()" -->
+		<form  onsubmit="return validate()" action="message.html" class="form-tags" id="registrationform" >
+			<h1 class="main-head">Registration form</h1>
+             <div class="row">
+             	<div class="form-label">
+             		<label for="user" >Name:</label>
+             	</div>
+             	<div class="form-control">
+             		<input id="user" type="text" name="username">
+             	</div>
+             </div>
+             <div class="row">
+             	<div class="form-label">
+             		<label for="pw">Password:</label></div>
+             		<div class="form-control">
+             			<input type="password" id="pw" name="Password">
+             		</div>
+             </div>
+		     <!-- disable the data -->
+		     <div class="row">
+             	<div class="form-label">
+             		<label>disables:</label></div>
+             		<div class="form-control">
+             			<input type="text" disabled placeholder="student">
+             		</div>
+             </div>
+             <!-- required example -->
+             <div class="row">
+             	<div class="form-label">
+             		<label for="id">id(Required):</label></div>
+             		<div class="form-control">
+             			<input id="id" type="text" required name="id" placeholder="student id">
+             		</div>
+             </div>
+             <!-- radio buttons -->
+             <div class="row">
+             	<div class="form-label">
+             		<label>Gender:</label>
+             	</div>
+             		<div class="form-control">
+             			Male:<input type="radio" name="k">
+                        Female:<input type="radio" name="k">
+             		</div>
+             </div>
+             
+             <!-- checkboxes -->
+             <label>Subjects:</label>
+             	
+             		<fieldset>
+             			<legend>subject</legend>
+
+             			WT<input type="checkbox" >
+             			PYTHON<input type="checkbox">
+             			JS<input type="checkbox">
+             
+   		      		</fieldset>
+             <!-- drop down -->
+             <div class="row">
+             	<div class="form-control">
+             		<label>Branch:</label></div>
+             		<div class="form-control">
+             			<select>
+             				<option>CSE</option>
+             				<option>ECE</option>
+             				<option>MECH</option>
+             			</select>
+             		</div>
+             </div>
+             <!-- address -->
+             <div class="row">
+             	<div class="form-control">
+             		<label>Address:</label></div>
+             		<div class="form-control">
+             			<textarea rows="5" cols="20" placeholder="enter here">india
+             				
+             			</textarea>
+             		</div>
+             </div>
+             <!-- Age -->
+             <div class="row">
+             	<div class="form-control">
+             		<label for="em">Email:</label></div>
+             		<div class="form-control">
+             			<input type="email" name="e" name="emailid" id="em">
+             		</div>
+             </div>
+             <!-- submit -->
+             <input type="reset" name="clear" onclick="fun1();">
+             <input type="submit" name="submit" onclick="fun();"/>
+             </form>
+
+	</div>
+
+	
+	<p class="para">form creation is completed</p>
+	<p>the below are the buttons</p>
+		<div>
+			<button id="jsbtn" onclick="newWindow();">open</button>
+			<button id="jsbtn2" onclick="closeWindow();">close</button>
+		</div>
+	
+<div class="events">
+	<h2>Javascript Events</h2><br>
+	<input type="button" onclick="clickevent()" value="click me">
+    
+    <input type="text" id="input1" onkeydown="keydownevent()"/>  
+    <br>
+    <p onload="window.alert('Page successfully loaded');">  
+
+    <div class="ptag"><p onmouseover="mouseoverevent()"> don't leave me </p> </div> 
+</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
