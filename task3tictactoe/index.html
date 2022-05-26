@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet"
+		type="text/css" href="style.css">
+		<style>
+			.sp{
+				color: white;
+			}
+		</style>
+	<script src="jstictac.js"></script>
+</head>
+
+<body class="bb">
+	<div id="main">
+		<h1>TIC TAC TOE</h1>
+
+		<!-- Game Instructions -->
+		<p id="in">welcome to the game , lets start &#127881;&#127881;&#127881;
+		</p>
+         
+			<p id="ins">
+			First player as 
+			<b id="p1">Player X</b>
+			<br><b class="sp">Vs</b><br>
+			second Player as 
+			<b id="p2">Player 0</b>
+		</p>
+
+<!-- Space to show player turn -->
+		<p id="print">who wins ? &#128170;</p>
+
+
+
+		<br>
+		<!-- 3*3 grid of Boxes -->
+		<input type="text" id="b1" onclick=
+			"button_1(); myfunc();" readonly>
+
+		<input type="text" id="b2" onclick=
+			"button_2(); myfunc();" readonly>
+
+		<input type="text" id="b3" onclick=
+			"button_3(); myfunc();" readonly>
+		<br><br>
+
+		<input type="text" id="b4" onclick=
+			"button_4(); myfunc();" readonly>
+			
+		<input type="text" id="b5" onclick=
+			"button_5(); myfunc();" readonly>
+
+		<input type="text" id="b6" onclick=
+			"button_6(); myfunc();" readonly>
+		<br><br>
+
+		<input type="text" id="b7" onclick=
+			"button_7(); myfunc();" readonly>
+
+		<input type="text" id="b8" onclick=
+			"button_8();myfunc();" readonly>
+
+		<input type="text" id="b9" onclick=
+			"button_9();myfunc();" readonly>
+
+		<!-- Grid end here -->
+		<br><br><br>
+		<!-- Button to reset game -->
+		<button id="but" onclick="myfunc_2()">
+			Reset
+		</button>
+		
+
+
+	</div>
+</body>
+
+</html>
